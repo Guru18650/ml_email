@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ml_email.MainPage"
+             Title="Email">
+
+    <StackLayout Padding="5">
+        <Label Text="Odiobrca" Margin="5" FontSize="15"/>
+        <Entry Keyboard="Email" Placeholder="john@smith.com" x:Name="emailE"/>
+        <Label Text="Temat" Margin="5" FontSize="15"/>
+        <Entry Keyboard="Text" Placeholder="Obiad" x:Name="topicE"/>
+        <Label Text="Treść" Margin="5" FontSize="15"/>
+        <Editor HeightRequest="200" Placeholder="Witam serdecznie," x:Name="contentE">
+        </Editor>
+        <Button Text="Dodaj zdjęcie" Clicked="Button_Clicked_1" x:Name="btnD" Margin="10" BackgroundColor="DeepPink"/>
+        <Button Text="Wyślij" Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
